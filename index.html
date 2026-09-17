@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CNC Machining for the Oil and Gas Industry | Morning Star Precision Machining </title>
+<meta name="description" content="CNC machining for the oil and gas industry. Custom oilfield components, precision milling, turning, material review, and dimensional inspection.">
+<style>
+:root{
+  --navy:#102d52;
+  --blue:#1769e0;
+  --light:#f4f7fb;
+  --text:#34445a;
+  --orange:#fe7d0b;
+  --border:#d9e1ec;
+}
+
+*,
+*::before,
+*::after{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  color:var(--text);
+  line-height:1.75;
+  background:#fff;
+  overflow-x:hidden;
+}
+
+.container{
+  width:100%;
+  max-width:1180px;
+  margin:0 auto;
+  padding:0 24px;
+}
+
+/* HERO / BANNER */
+.hero{
+  background:#fff;
+  color:var(--text);
+  padding:72px 0;
+  border-bottom:1px solid var(--border);
+}
+
+.hero .container{
+  display:grid;
+  grid-template-columns:minmax(0,1.08fr) minmax(320px,.92fr);
+  align-items:center;
+  gap:56px;
+}
+
+.hero-content{
+  min-width:0;
+}
+
+.hero-media{
+  min-width:0;
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.hero-media img{
+  display:block;
+  width:100%;
+  height:auto;
+  max-height:440px;
+  object-fit:cover;
+  border-radius:10px;
+  box-shadow:0 14px 40px rgba(16,45,82,.12);
+}
+
+.hero h1{
+  color:var(--navy);
+  font-size:clamp(2.2rem,4.2vw,4rem);
+  line-height:1.12;
+  max-width:680px;
+  margin:0 0 22px;
+  font-weight:800;
+  letter-spacing:-.5px;
+}
+
+.hero p{
+  max-width:680px;
+  font-size:1.06rem;
+  margin:0 0 17px;
+}
+
+.eyebrow{
+  text-transform:uppercase;
+  letter-spacing:2px;
+  color:var(--blue);
+  font-size:.8rem;
+  font-weight:700;
+  margin-bottom:14px;
+}
+
+.btn{
+  display:inline-block;
+  background:var(--orange);
+  color:#fff!important;
+  padding:12px 22px;
+  border-radius:4px;
+  text-decoration:none;
+  font-weight:700;
+  margin:12px 0;
+  transition:background .2s ease,transform .2s ease;
+}
+
+.btn:hover{
+  background:#dc6805;
+  transform:translateY(-1px);
+}
+
+main{
+  padding:58px 0;
+}
+
+h2{
+  color:var(--navy);
+  font-size:2rem;
+  line-height:1.25;
+  margin:58px 0 20px;
+  border-left:5px solid var(--blue);
+  padding-left:15px;
+}
+
+h3{
+  color:var(--navy);
+  font-size:1.35rem;
+  line-height:1.35;
+  margin-top:32px;
+}
+
+p{
+  margin:0 0 17px;
+}
+
+a{
+  color:var(--blue);
+  font-weight:600;
+}
+
+ul{
+  padding-left:25px;
+  margin:10px 0 22px;
+}
+
+li{
+  margin:5px 0;
+}
+
+table{
+  border-collapse:collapse;
+  width:100%;
+  margin:25px 0;
+  background:#fff;
+}
+
+th,
+td{
+  border:1px solid #d9e1ec;
+  padding:12px 15px;
+  text-align:left;
+}
+
+th{
+  background:var(--navy);
+  color:#fff;
+}
+
+.notice{
+  background:var(--light);
+  padding:20px;
+  border-radius:6px;
+}
+
+footer{
+  background:var(--navy);
+  color:#fff;
+  padding:30px 0;
+  margin-top:30px;
+}
+
+footer a{
+  color:#fff;
+}
+
+/* TABLET */
+@media (max-width:980px){
+  .container{
+    padding:0 24px;
+  }
+
+  .hero{
+    padding:56px 0;
+  }
+
+  .hero .container{
+    grid-template-columns:minmax(0,1fr) minmax(270px,.85fr);
+    gap:36px;
+  }
+
+  .hero h1{
+    font-size:clamp(2rem,4.8vw,3.2rem);
+  }
+
+  .hero p{
+    font-size:1rem;
+  }
+
+  .hero-media img{
+    max-height:380px;
+  }
+
+  main{
+    padding:44px 0;
+  }
+
+  h2{
+    font-size:1.8rem;
+  }
+}
+
+/* MOBILE */
+@media (max-width:700px){
+  .container{
+    padding:0 18px;
+  }
+
+  .hero{
+    padding:38px 0 42px;
+  }
+
+  .hero .container{
+    display:flex;
+    flex-direction:column;
+    align-items:stretch;
+    gap:28px;
+  }
+
+  .hero-content{
+    order:1;
+  }
+
+  .hero-media{
+    order:2;
+  }
+
+  .hero-media img{
+    width:100%;
+    max-width:100%;
+    max-height:none;
+    border-radius:8px;
+  }
+
+  .hero h1{
+    font-size:clamp(2rem,8.5vw,2.6rem);
+    line-height:1.15;
+    margin-bottom:18px;
+  }
+
+  .hero p{
+    font-size:1rem;
+    line-height:1.7;
+  }
+
+  .eyebrow{
+    letter-spacing:1.4px;
+    line-height:1.5;
+  }
+
+  .btn{
+    padding:11px 18px;
+  }
+
+  main{
+    padding:30px 0;
+  }
+
+  h2{
+    font-size:1.65rem;
+    line-height:1.3;
+    margin-top:40px;
+    padding-left:12px;
+  }
+
+  h3{
+    font-size:1.22rem;
+    line-height:1.4;
+  }
+
+  table{
+    display:block;
+    overflow-x:auto;
+    white-space:nowrap;
+    font-size:.9rem;
+  }
+
+  th,
+  td{
+    padding:10px 12px;
+  }
+}
+
+/* SMALL MOBILE */
+@media (max-width:480px){
+  .container{
+    padding:0 16px;
+  }
+
+  .hero{
+    padding:32px 0 36px;
+  }
+
+  .hero .container{
+    gap:24px;
+  }
+
+  .hero h1{
+    font-size:2rem;
+  }
+
+  .hero p{
+    font-size:.96rem;
+  }
+
+  .hero-media img{
+    border-radius:7px;
+  }
+
+  main{
+    padding:24px 0;
+  }
+
+  h2{
+    font-size:1.5rem;
+  }
+
+  h3{
+    font-size:1.16rem;
+  }
+}
+
+</style>
+</head>
+<body>
+<header class="hero">
+<div class="container">
+
+<div class="hero-content">
+<div class="eyebrow">Precision CNC Machining Services</div>
+<h1>CNC Machining for the Oil and Gas Industry</h1><p>Custom CNC machined components for oilfield equipment, energy systems, and industrial applications. MS Machining works from customer drawings and technical requirements to produce precision-machined parts for mechanical assemblies requiring dimensional control, complex geometries, and specified materials.</p><p><a class="btn" href="#quote">Request a CNC Machining Quote</a></p>
+</div>
+
+<div class="hero-media">
+<img src="oil-gas-cnc-machining-hero.png.png" alt="CNC machining for the oil and gas industry">
+</div>
+
+</div>
+</header>
+<main><div class="container">
+<h2>Precision CNC Machining for Oil and Gas Equipment</h2>
+<p>Oil and gas equipment operates across different environments, from surface processing systems and fluid-handling equipment to offshore installations and downhole tools. Each application places its own requirements on the components used in the assembly.</p>
+<p>A part may require a precise bore, a controlled sealing surface, threaded connections, or accurate positioning between multiple features. These requirements influence the machining process, workholding method, inspection approach, and material selection.</p>
+<p>At Morning Star Precision Machining, CNC milling and turning projects are reviewed according to the customer's drawings, material specifications, tolerances, and production requirements. The objective is to manufacture components that match the defined technical requirements, rather than applying the same machining approach to every part.</p>
+<p>The following applications are relevant to custom CNC machining for the oil and gas industry:</p>
+<ul><li>Oilfield equipment and mechanical assemblies</li><li>Valve and fluid-control components</li><li>Pump and flow-handling components</li><li>Drilling and downhole equipment parts</li><li>Offshore and marine energy equipment</li><li>Industrial equipment used in oil and gas processing</li></ul>
+<p>The suitability of a particular component depends on its design, material, operating conditions, and applicable specifications.</p>
+<p>For a broader look at equipment-related applications, explore our guide to <a href="https://ms-machining.com/oil-and-gas-cnc-machining/">CNC machining applications across oilfield and offshore equipment</a>.</p>
+
+<h2>CNC Machined Components for Oil and Gas Applications</h2>
+<h3>Valve and Fluid-Control Components</h3>
+<p>Valve-related equipment may contain machined bodies, adapters, sleeves, retainers, seats, plugs, and other custom components.</p>
+<p>The exact part requirements depend on the valve design and the function of each feature. Important considerations may include:</p>
+<ul><li>Bore dimensions and positional accuracy</li><li>Thread specifications</li><li>Sealing surface geometry</li><li>Groove dimensions</li><li>Material and heat-treatment condition</li><li>Surface finish</li></ul>
+<p>A sealing surface should be evaluated according to its intended function and the applicable drawing requirements. A general surface roughness value or dimensional tolerance cannot establish suitability for every valve application.</p>
+
+<h3>Pump and Flow-Handling Components</h3>
+<p>Pumps and fluid-handling systems use components with different combinations of rotating features, bores, mounting interfaces, and internal geometries.</p>
+<p>Depending on the design, CNC machining may involve:</p>
+<ul><li>Shaft and bore relationships</li><li>Bearing or sleeve fits</li><li>Concentricity and runout</li><li>Machined mounting surfaces</li><li>Surface finish on functional interfaces</li><li>Dimensional inspection of critical features</li></ul>
+<p>The manufacturing process should account for the relationship between the individual features. A part that meets its external dimensions may still require additional inspection if its bore alignment or mating geometry is critical to assembly performance.</p>
+
+<h3>Downhole Tool Components</h3>
+<p>Downhole equipment can involve complex profiles, deep bores, threaded connections, and materials selected for specific mechanical and environmental requirements.</p>
+<p>Potential machining considerations include:</p>
+<ul><li>Deep or stepped bores</li><li>Threaded connections</li><li>Cylindrical alignment features</li><li>Complex external profiles</li><li>Material-specific cutting conditions</li><li>Inspection of critical dimensions</li></ul>
+<p>The application requirements should be identified before production. Machining a part to a drawing does not, by itself, establish that the finished component is qualified for a particular downhole service condition.</p>
+
+<h3>Custom Replacement Parts</h3>
+<p>When an original component becomes difficult to source, a replacement part may need to be manufactured from an existing drawing, CAD file, or other technical information.</p>
+<p>The available information determines how the component can be reviewed and quoted. A project may involve:</p>
+<ul><li>Existing 2D drawings</li><li>3D CAD models</li><li>A physical sample</li><li>Critical dimensions</li><li>Material specifications</li><li>Surface-treatment requirements</li><li>Inspection documentation</li></ul>
+<p>A worn sample should not automatically be treated as a complete manufacturing specification. Wear, deformation, or previous repairs may have changed the original dimensions.</p>
+<p>For customers sourcing parts in West Africa, the availability of technical information and replacement components can be particularly relevant when maintenance schedules are tight. Our discussion of <a href="https://ms-machining.com/precision-machining-west-africa-critical-parts/">replacement-part sourcing for mines, oilfields, and processing plants in West Africa</a> examines these considerations in a regional maintenance context.</p>
+
+<h2>Materials for Oil and Gas CNC Machining</h2>
+<h3>Material Selection Starts With the Service Requirements</h3>
+<p>Material selection should be based on the actual application rather than the alloy name alone.</p>
+<p>Pressure, temperature, fluid chemistry, corrosion exposure, mechanical loads, hardness, and heat-treatment requirements can all influence the material specification.</p>
+<p>For sour-service applications, material selection and processing may be governed by applicable requirements such as ISO 15156 / NACE MR0175. These requirements are not a universal approval for every material or component; the relevant specification and service conditions must be reviewed.</p>
+
+<h3>Stainless Steel</h3>
+<p>Stainless steels are used in various industrial and fluid-handling applications.</p>
+<ul><li>316L stainless steel</li><li>17-4 PH stainless steel</li><li>Other grades specified by the customer</li></ul>
+<p>The machining strategy depends on the material grade and condition. Tool selection, cutting parameters, workholding, and finishing requirements should be considered together.</p>
+
+<h3>Duplex and Super Duplex Stainless Steel</h3>
+<p>Duplex stainless steels may be selected for applications requiring a combination of mechanical strength and corrosion resistance.</p>
+<ul><li>Duplex 2205</li><li>Super Duplex 2507</li></ul>
+<p>The actual material grade and condition must be confirmed against the customer specification. General corrosion resistance does not automatically establish suitability for a particular fluid, pressure, or sour-service environment.</p>
+
+<h3>Nickel-Based Alloys</h3>
+<p>Nickel-based alloys such as Inconel 625 and Inconel 718 can present additional machining challenges.</p>
+<ul><li>Work hardening</li><li>Heat generation</li><li>Tool wear</li><li>Cutting conditions</li><li>Setup rigidity</li><li>Dimensional stability</li></ul>
+<p>The machining approach should be selected for the actual material rather than treating all nickel-based alloys in the same way.</p>
+
+<h3>Alloy Steel</h3>
+<p>Alloy steels such as 4130 and 4140 may be specified for selected mechanical components.</p>
+<p>The required material grade, heat treatment, hardness, and application requirements should be confirmed before production.</p>
+<p><strong>Material selection and component qualification remain engineering responsibilities defined by the applicable product requirements.</strong></p>
+
+<h2>CNC Milling and Turning for Oil and Gas Components</h2>
+<h3>Machining Processes Based on Part Geometry</h3>
+<p>The appropriate machining process depends on the part geometry, material, tolerance requirements, and production quantity.</p>
+<p>For complex components, the manufacturing challenge is often controlling the relationship between multiple features while maintaining suitable tool access and inspection capability.</p>
+
+<h3>CNC Milling</h3>
+<p>CNC milling can be used for components requiring:</p>
+<ul><li>Machined pockets and slots</li><li>Mounting faces</li><li>Drilled and threaded holes</li><li>Curved surfaces</li><li>Complex three-dimensional profiles</li><li>Multiple machined faces</li></ul>
+<p>The setup strategy should be considered alongside the drawing datums and critical dimensions. A suitable workholding method can help maintain consistent positioning between operations.</p>
+
+<h3>CNC Turning</h3>
+<p>CNC turning is suitable for components with rotational features, including shafts, sleeves, bushings, adapters, and cylindrical housings.</p>
+<p>Typical operations may include:</p>
+<ul><li>External diameter machining</li><li>Internal boring</li><li>Facing</li><li>Grooving</li><li>Threading</li><li>Stepped and contoured turning</li></ul>
+<p>For components combining turning and milling requirements, the manufacturing route should be selected according to the part's geometry and the required feature relationships.</p>
+
+<h3>5-Axis CNC Machining</h3>
+<p>5-axis machining can provide additional tool orientation and access for selected complex components.</p>
+<p>It may be useful for parts involving:</p>
+<ul><li>Angled surfaces</li><li>Complex contours</li><li>Multiple machined faces</li><li>Difficult tool-access conditions</li><li>Reduced setup requirements</li></ul>
+<p>The number of machine axes alone does not determine the final accuracy. Fixture design, machine condition, tooling, programming, and inspection remain important.</p>
+<p>For a closer discussion of the engineering problems that can arise during production, see our article on <a href="https://ms-machining.com/oil-and-gas-replacement-parts/">machining challenges related to tool access, workholding, and process planning</a>.</p>
+
+<h3>Stated Machining Capabilities</h3>
+<table><thead><tr><th>Capability</th><th>Reference</th></tr></thead><tbody>
+<tr><td>CNC milling</td><td>Custom machined components</td></tr>
+<tr><td>5-axis machining</td><td>Complex geometries</td></tr>
+<tr><td>CNC turning</td><td>Rotational components</td></tr>
+<tr><td>Stated tolerance</td><td>Up to ±0.005 mm, where applicable</td></tr>
+<tr><td>Maximum part size</td><td>Up to 1000 × 800 × 500 mm, subject to review</td></tr>
+<tr><td>Surface finish</td><td>Ra 0.8 μm, where specified and achievable</td></tr>
+</tbody></table>
+<p>These values should be confirmed against the actual part geometry, material, process, and inspection requirements. They should not be interpreted as blanket guarantees for every component.</p>
+
+<h2>Manufacturing Considerations for Oil and Gas Equipment Components</h2>
+<h3>Reviewing the Features That Affect Assembly</h3>
+<p>A drawing provides the basis for manufacturing, but complex oil and gas components may require additional clarification before production.</p>
+<p>A part can meet its overall dimensions while still having problems with a critical bore, thread, sealing face, or mounting interface.</p>
+<p>The following features may need particular attention:</p>
+<p><strong>Critical bores</strong></p><p>Diameter, position, concentricity, and surface condition may affect the fit of mating components.</p>
+<p><strong>Threaded connections</strong></p><p>Thread form, pitch, pitch diameter, and gauge requirements should be identified from the drawing or applicable standard.</p>
+<p><strong>Sealing surfaces</strong></p><p>The relevant dimensions, geometry, and surface finish depend on the seal design and specified acceptance criteria.</p>
+<p><strong>Mounting and alignment features</strong></p><p>The relationship between holes, faces, and datums can influence whether the part assembles correctly.</p>
+<p>Our article on <a href="https://ms-machining.com/oil-gas-equipment-components/">planning the production of oil and gas equipment components</a> discusses additional manufacturing considerations for these types of parts.</p>
+
+<h2>Engineering Review Before Machining</h2>
+<h3>From Drawing Review to Process Planning</h3>
+<p>The machining strategy for an oil and gas component depends on more than its external shape.</p>
+<p>Material behavior, tool access, workholding, and setup sequence can affect the production process. For parts with multiple critical features, the order of operations may influence how those features are located and inspected.</p>
+<p>A review before production can help identify questions such as:</p>
+<ul><li>Are the critical dimensions clearly defined?</li><li>Is the material grade and condition specified?</li><li>Can the required features be accessed with the selected tools?</li><li>Are the datums suitable for the proposed setup?</li><li>Does the inspection method match the tolerance requirements?</li><li>Are finishing operations likely to affect final dimensions?</li></ul>
+<p>The purpose of a manufacturability review is to identify potential production issues early and discuss practical options with the customer. Any design changes should be approved by the customer or responsible engineer.</p>
+
+<h3>Design for Manufacturability</h3>
+<ul><li>Tool access to deep cavities</li><li>Internal corner radii</li><li>Thin walls</li><li>Long and slender features</li><li>Multiple setups</li><li>Threading and boring</li><li>Workholding options</li><li>Inspection accessibility</li></ul>
+<p>The manufacturing approach should be based on the actual component rather than applying a standard process to every part.</p>
+
+<h2>Dimensional Inspection and Quality Requirements</h2>
+<h3>Checking Features That Matter to the Assembly</h3>
+<p>Inspection should be connected to the drawing's datums, tolerances, and functional requirements.</p>
+<p>Morning Star Precision Machining's stated inspection resources include:</p>
+<ul><li>Coordinate Measuring Machine (CMM)</li><li>Height gauge</li><li>Thread gauge</li></ul>
+<p>The appropriate measurement method depends on the feature geometry, tolerance, accessibility, and required inspection scope.</p>
+<h3>Inspection Considerations</h3>
+<ul><li>Bore diameter and position</li><li>Thread dimensions</li><li>Flatness of specified faces</li><li>Relative position between features</li><li>Surface finish</li><li>Dimensional requirements after finishing</li></ul>
+<p>For example, a bore may require more than a diameter measurement if its position or relationship to another feature affects assembly.</p>
+<p>The inspection documentation should match the agreed purchase order and technical requirements.</p>
+<p>Depending on the project, customers may request:</p>
+<ul><li>Dimensional inspection reports</li><li>Critical feature measurements</li><li>Material documentation</li><li>Surface-finish results</li><li>Thread inspection records</li><li>Customer-specified certificates</li></ul>
+<p>Documentation requirements should be discussed before production.</p>
+
+<h2>Custom Replacement Parts and Production Support</h2>
+<h3>When Existing Components Are Difficult to Source</h3>
+<p>Equipment used in oil and gas operations may remain in service for extended periods. A maintenance project can involve components that are no longer readily available, require modification, or need to be manufactured from existing technical information.</p>
+<p>CNC machining may be an option when a suitable drawing, CAD model, or sufficiently detailed specification is available.</p>
+<p>The available information determines whether the part can be quoted directly or requires further technical review.</p>
+<h3>From Prototype to Repeat Production</h3>
+<p>A project may begin with a single replacement component or prototype and later involve repeat production.</p>
+<ul><li>Part revisions</li><li>Material sourcing</li><li>Fixture strategy</li><li>Critical-feature inspection</li><li>Production quantity</li><li>Repeatability requirements</li></ul>
+<p>A process suitable for a single part may need additional planning when the order volume increases.</p>
+
+<h2>Surface Finishing for Oil and Gas Components</h2>
+<h3>Finishing According to the Application</h3>
+<p>Surface finishing may affect corrosion protection, wear resistance, dimensional requirements, or surface condition.</p>
+<p>The appropriate treatment depends on the base material, component design, operating environment, and customer specification.</p>
+<p>Morning Star Precision Machining's service scope includes surface-treatment options such as anodizing, powder coating, plating, and passivation. The specific finishing process should be confirmed for the selected material and application.</p>
+<h3>Passivation</h3><p>Passivation may be specified for certain stainless steel components.</p><p>The process and acceptance requirements should be defined according to the relevant customer or engineering specification.</p>
+<h3>Plating</h3><p>Plating may be used where the drawing or application requires a specified surface treatment.</p><p>Coating type, thickness, substrate, and dimensional effects should be considered together.</p>
+<h3>Surface Roughness</h3><p>Surface roughness requirements should be specified according to the feature's function.</p><p>A general Ra value does not automatically establish suitability for every sealing, sliding, or pressure-related application.</p>
+
+<h2>CNC Machining Workflow</h2>
+<h3>From RFQ to Finished Components</h3>
+<p>A clear manufacturing workflow helps connect the drawing requirements, production process, and inspection results.</p>
+<h3>1. Submit Drawings and Technical Requirements</h3>
+<p>Provide the part drawing, CAD file, material specification, quantity, and relevant finishing or inspection requirements.</p>
+<ul><li>STEP / STP</li><li>IGES</li><li>X_T</li><li>DWG</li><li>PDF</li></ul>
+<h3>2. Drawing and Process Review</h3>
+<p>The part geometry, material, critical dimensions, tolerance requirements, and machining approach are reviewed to identify manufacturing considerations.</p>
+<p>Questions concerning unclear or conflicting requirements should be resolved with the customer before production.</p>
+<p>For a detailed explanation of the journey from initial requirements through manufacturing, see our guide to <a href="https://ms-machining.com/cnc-machining-applications-oil-gas-industry/">moving from part requirements to finished production</a>.</p>
+<h3>3. Quotation</h3><p>The quotation is based on the available technical information, quantity, material, processing requirements, and agreed scope.</p><p>Morning Star Precision Machining states that quotations can be provided within 24 hours, subject to the completeness and complexity of the RFQ.</p>
+<h3>4. CNC Machining</h3><p>The part is manufactured according to the approved drawing and agreed process.</p><p>The operation sequence depends on the geometry, material, workholding requirements, and critical features.</p>
+<h3>5. Inspection and Finishing</h3><p>Required inspection and finishing operations are completed according to the agreed requirements.</p><p>Critical dimensions should be checked using an appropriate measurement method.</p>
+<h3>6. Delivery</h3><p>Finished components and any agreed documentation are prepared for shipment.</p><p>Final lead time depends on the part, material, quantity, process complexity, and any outsourced operations.</p>
+
+<h2 id="quote">Request a Quote for Oil and Gas Machined Parts</h2>
+<h3>Send Your Part Requirements to Morning Star Precision Machining</h3>
+<p>Whether you are sourcing a custom component, replacement part, or small production batch, the most useful starting point is the technical information available for the part.</p>
+<p>Send your drawings or CAD files together with the material, quantity, tolerances, and special inspection requirements.</p>
+<p>This information helps determine the appropriate machining approach and the requirements that need to be reviewed before production.</p>
+<h3>What to Include in Your RFQ</h3>
+<ul><li>Part drawing or 3D CAD model</li><li>Material grade and condition</li><li>Quantity and expected repeat volume</li><li>Critical dimensions and tolerances</li><li>Surface-treatment requirements</li><li>Inspection documentation</li><li>Target delivery schedule</li><li>Applicable customer or product specifications</li></ul>
+<p><a class="btn" href="mailto:ms-machining@vip.163.com">Request a CNC Machining Quote</a></p>
+<p>Email: <a href="mailto:ms-machining@vip.163.com">ms-machining@vip.163.com</a></p>
+<p>Get in touch with your part requirements.</p>
+
+<h2>Frequently Asked Questions</h2>
+<h3>1. What types of oil and gas components can be CNC machined?</h3>
+<p>CNC machining can be used for various custom components, including valve-related parts, adapters, sleeves, bushings, pump components, housings, and selected drilling or downhole equipment parts.</p>
+<p>The actual manufacturing scope depends on the component's geometry, material, tolerances, and application requirements.</p>
+<h3>2. What materials are commonly used for oil and gas CNC machining?</h3>
+<p>Materials may include stainless steel, duplex stainless steel, alloy steel, and nickel-based alloys such as Inconel 625 and Inconel 718.</p>
+<p>The appropriate material must be selected according to the customer's engineering specification and actual service requirements.</p>
+<h3>3. Can you manufacture custom oilfield replacement parts?</h3>
+<p>Custom replacement parts can be reviewed based on available drawings, CAD files, and technical requirements.</p>
+<p>If the original drawing is unavailable, additional dimensional and functional information may be needed.</p>
+<h3>4. What CNC machining tolerances can you achieve?</h3>
+<p>Morning Star Precision Machining  states a machining tolerance capability of up to ±0.005 mm for applicable features.</p>
+<p>The achievable tolerance depends on the part geometry, material, machining process, setup, and measurement method.</p>
+<h3>5. Do you provide inspection reports for oil and gas machined parts?</h3>
+<p>Inspection documentation can be discussed based on the customer's requirements.</p>
+<p>Morning Star Precision Machining's stated inspection resources include CMM, height gauges, and thread gauges. The applicable measurement method and reporting scope should be agreed before production.</p>
+<h3>6. Can you machine parts for high-pressure or sour-service applications?</h3>
+<p>Suitability for high-pressure or sour-service applications depends on the complete engineering and product requirements, including material, design, applicable standards, and required testing.</p>
+<p>Machining alone does not establish pressure integrity or sour-service qualification.</p>
+<h3>7. What file formats can I submit for a CNC machining quotation?</h3>
+<p>You can submit STEP, STP, IGES, X_T, DWG, or PDF files.</p>
+<p>For complex parts, a 3D CAD model together with a dimensioned drawing can help clarify geometry and manufacturing requirements.</p>
+<h3>8. How quickly can I receive a CNC machining quotation?</h3>
+<p>Morning Star Precision Machining states that quotations can be provided within 24 hours.</p>
+<p>The actual quotation time depends on the completeness of the technical information and the complexity of the project.</p>
+
+</div></main>
+<footer><div class="container">Morning Star Precision Machining · CNC Machining for the Oil and Gas Industry · <a href="mailto:ms-machining@vip.163.com" style="color:#fff">ms-machining@vip.163.com</a></div></footer>
+</body>
+</html>
